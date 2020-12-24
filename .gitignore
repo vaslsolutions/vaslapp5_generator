@@ -1,2 +1,6 @@
 .idea
 vaslapp5generator/config.py
+api
+dal
+service
+dist

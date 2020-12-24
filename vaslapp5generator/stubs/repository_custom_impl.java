@@ -1,4 +1,4 @@
-package {namespace_base}.dal.repository.custom;
+package {namespace_base}.{namespace_repository_custom};
 
 import {namespace_base}.{namespace_dto}.{entity_name}PageQueryParams;
 import {namespace_base}.{namespace_entity}.{entity_name};

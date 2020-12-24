@@ -1,4 +1,4 @@
-package {namespace_base}.api.controller;
+package {namespace_base}.{namespace_controller};
 
 import com.vasl.ario.crudutil.api.validation.AddGroup;
 import com.vasl.ario.crudutil.api.validation.EditGroup;

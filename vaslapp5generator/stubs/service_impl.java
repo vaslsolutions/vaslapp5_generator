@@ -6,7 +6,7 @@ import com.vasl.ario.crudutil.service.exception.DuplicationException;
 import com.vasl.ario.crudutil.service.exception.NotFoundException;
 import {namespace_base}.{namespace_dto}.{entity_name}PageQueryParams;
 import {namespace_base}.{namespace_entity}.{entity_name};
-import {namespace_base}.dal.repository.{entity_name}Repository;
+import {namespace_base}.{namespace_repository}.{entity_name}Repository;
 import {namespace_base}.{namespace_service_mapper}.{entity_name}ServiceMapper;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
