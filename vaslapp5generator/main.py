@@ -1,4 +1,4 @@
-from config import *
+from vaslapp5generator.config import *
 
 
 replacements = {
