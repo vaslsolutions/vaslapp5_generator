@@ -4,4 +4,4 @@ setup.py
 vaslapp5generator/__init__.py
 vaslapp5generator/config.example.py
 vaslapp5generator/config.py
-vaslapp5generator/main.py
+vaslapp5generator/vaslapp5generator.py
