@@ -7,7 +7,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.repository.support.PageableExecutionUtils;
+import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ObjectUtils;
 
@@ -23,10 +23,10 @@ public class Custom{entity_name}RepositoryImpl implements Custom{entity_name}Rep
     }
 
     @Override
-    public Page<{entity_name}> findAllByPageQueryParams({entity_name}PageQueryParams {entity_name}PageQueryParams, Pageable pageable) {
+    public Page<{entity_name}> findAllByPageQueryParams({entity_name}PageQueryParams {entity_variable}PageQueryParams, Pageable pageable) {
         Query query = new Query().with(pageable);
-        if (!ObjectUtils.isEmpty({entity_name}PageQueryParams.getName())) {
-            query.addCriteria(Criteria.where("name").regex(".*" + {entity_name}PageQueryParams.getName().trim() + ".*", "i"));
+        if (!ObjectUtils.isEmpty({entity_variable}PageQueryParams.getName())) {
+            query.addCriteria(Criteria.where("name").regex(".*" + {entity_variable}PageQueryParams.getName().trim() + ".*", "i"));
         }
         List<{entity_name}> list = mongoTemplate.find(query, {entity_name}.class);
         return PageableExecutionUtils.getPage(
