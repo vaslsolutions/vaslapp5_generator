@@ -1,9 +1,12 @@
 from distutils.core import setup
 
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
+
 setup(
     name='vaslapp5generator',
     packages=['vaslapp5generator'],
-    version='0.0.7',
+    version='1.0.0',
     license='MIT',
     description='Generate vaslapp v5 entity boilerplate',
     author='Ali Farhoudi',
@@ -27,4 +30,6 @@ setup(
     ],
     include_package_data=True,
     package_data={'': ['stubs/*.java', 'sample-config.json']},
+    long_description=long_description,
+    long_description_content_type='text/markdown',
 )
